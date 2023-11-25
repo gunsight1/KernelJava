@@ -1,11 +1,11 @@
-package test;
+package main.test;
 
-import school.School;
-import school.Score;
-import school.Student;
-import school.Subject;
-import report.GenerateGradeReport;
-import utils.Define;
+import main.java.school.School;
+import main.java.school.Score;
+import main.java.school.Student;
+import main.java.school.Subject;
+import main.java.report.GenerateGradeReport;
+import main.java.utils.Define;
 
 public class TestMain {
 

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>My Spring Boot App</title>
+</head>
+<body>
+<h1>Welcome to My Spring Boot App!</h1>
+
+<p th:text="'The current date and time is: ' + ${#dates.format(#dates.now(), 'yyyy-MM-dd HH:mm:ss')}" />
+
+<div th:if="${loggedIn}" >
+    <p th:text="'Welcome, ' + ${username}" />
+    <a th:href="@{/logout}">Logout</a>
+</div>
+<div th:unless="${loggedIn}">
+    <a th:href="@{/login}">Login</a>
+</div>
+</body>
+</html>
