@@ -1,4 +1,4 @@
-package school;
+package main.java.school;
 
 import java.util.ArrayList;
 
@@ -17,11 +17,11 @@ public class School {
 			instance = new School();
 		return instance;
 	}
-	
+
 	public ArrayList<Student> getStudentList(){
 		return studentList;
 	}
-	
+
 	public void addStudent(Student student){
 		studentList.add(student);
 	}

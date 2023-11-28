@@ -1,0 +1,29 @@
+server:
+  port: 9999
+
+spring:
+  datasource:
+    url: ${DB_NM}
+    username: ${DB_ID}
+    password: ${DB_PW}
+    driverClassName: com.mysql.cj.jdbc.Driver
+  jpa:
+    defer-datasource-initialization: true
+    init.mode: always
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+    properties:
+      format_sql: true
+      dialect: org.hibernate.dialect.MySQL8Dialect
+  thymeleaf3:
+    decoupled-logic: true
+  thymeleaf:
+    prefix: classpath:/src/main/resources/templates/
+    suffix: .html
+  resources:
+    static-locations: classpath:/static/,classpath:/public/,classpath:/src/main/resources/
+
+

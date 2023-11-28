@@ -1,16 +1,16 @@
-package report;
+package main.java.report;
 
 import java.util.ArrayList;
 
-import grade.BasicEvaluation;
-import grade.GradeEvaluation;
-import grade.MajorEvaluation;
-import grade.PassFailEvaluation;
-import school.School;
-import school.Score;
-import school.Student;
-import school.Subject;
-import utils.Define;
+import main.java.grade.BasicEvaluation;
+import main.java.grade.GradeEvaluation;
+import main.java.grade.MajorEvaluation;
+import main.java.grade.PassFailEvaluation;
+import main.java.school.School;
+import main.java.school.Score;
+import main.java.school.Student;
+import main.java.school.Subject;
+import main.java.utils.Define;
 
 public class GenerateGradeReport {
 
@@ -76,7 +76,7 @@ public class GenerateGradeReport {
 	
 	public void evaluateGradeByScoreAndStrategy( Subject subject, Score score, int majorId) {
 		
-		GradeEvaluation[] gradeEvaluation = {new BasicEvaluation(), new MajorEvaluation(), new PassFailEvaluation()}; 
+		GradeEvaluation[] gradeEvaluation = {new BasicEvaluation(), new MajorEvaluation(), new PassFailEvaluation()};
 		String grade;
 		
 		if( subject.getGradeType() == Define.PF_TYPE) {

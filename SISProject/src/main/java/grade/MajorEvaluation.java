@@ -1,5 +1,8 @@
-package grade;
+package main.java.grade;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class MajorEvaluation implements GradeEvaluation{
 
 	@Override

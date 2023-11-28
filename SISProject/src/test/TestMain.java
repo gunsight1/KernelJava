@@ -1,4 +1,4 @@
-package main.test;
+package test;
 
 import main.java.school.School;
 import main.java.school.Score;

@@ -1,4 +1,4 @@
-package school;
+package main.java.school;
 
 public class Score {
 	int studentId;   //학번

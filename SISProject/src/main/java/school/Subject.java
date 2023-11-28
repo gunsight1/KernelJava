@@ -1,7 +1,8 @@
-package school;
+package main.java.school;
 
 import java.util.ArrayList;
-import utils.Define;
+
+import main.java.utils.Define;
 
 
 public class Subject {
